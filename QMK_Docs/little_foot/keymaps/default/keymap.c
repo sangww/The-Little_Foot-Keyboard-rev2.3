@@ -75,29 +75,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LT(uSYM, KC_SPC)
   ),  
 
+
   [_uSYM] = LAYOUT_big_space_base(
-    KC_1,    KC_2,             KC_3,    KC_4,    KC_5,          KC_6,         KC_7,           KC_8,    KC_9,    KC_0,
-    xxx,     xxx,              xxx,     xxx,     LALT(KC_LEFT), KC_UP,        LALT(KC_RIGHT), KC_LBRC, KC_RBRC, KC_GRV,
-    xxx,     xxx,              xxx,     xxx,     KC_LEFT,       KC_DOWN,      KC_RIGHT,       KC_SCLN, KC_QUOT, LGUI(KC_SPC),
-    KC_BSLS, LGUI(LSFT(KC_Z)), xxx,     xxx,     xxx,           xxx,          xxx,            xxx,     KC_SLSH, xxx,
+    KC_1,    KC_2,             KC_3,       KC_4,           KC_5, KC_6, KC_7,          KC_8,     KC_9,           KC_0,
+    xxx,     LCTL(KC_LEFT),    LALT(KC_UP),    LCTL(KC_RIGHT), xxx,  xxx,  LALT(KC_LEFT), KC_UP,    LALT(KC_RIGHT), xxx,
+    xxx,     LGUI(KC_LEFT),          LALT(KC_DOWN),    LGUI(KC_RIGHT),         xxx,  xxx,  KC_LEFT,       KC_DOWN,  KC_RIGHT,       LGUI(KC_SPC),
+    KC_BSLS, LGUI(LSFT(KC_Z)), xxx,        xxx,            xxx,  xxx,  xxx,           xxx,      KC_SLSH,        xxx,
     xxx
   ),
 
   [_uZN] = LAYOUT_big_space_base(
-    xxx,        xxx,        LGUI(LCTL(KC_4)), LGUI(LCTL(LSFT(KC_4))), xxx,        xxx,        xxx,        xxx,        LALT(KC_DEL), LALT(KC_BSPC),
-    LGUI(KC_Q), LGUI(KC_W), LGUI(KC_E),       LGUI(KC_R),             LGUI(KC_T), LGUI(KC_Y), LGUI(KC_U), LGUI(KC_I), LGUI(KC_O),   LGUI(KC_P),
-    LGUI(KC_A), LGUI(KC_S), LGUI(KC_D),       LGUI(KC_F),             LGUI(KC_G), LGUI(KC_H), LGUI(KC_J), LGUI(KC_K), LGUI(KC_L),   LGUI(KC_ENT),
-    xxx,        LGUI(KC_Z), LGUI(KC_X),       LGUI(KC_C),             LGUI(KC_V), LGUI(KC_B), LGUI(KC_N), LGUI(KC_M), xxx,          xxx,
+    xxx,        xxx,        LGUI(LCTL(KC_4)), LGUI(LCTL(LSFT(KC_4))), xxx,        xxx,        LGUI(KC_MINS), LGUI(KC_EQL), LALT(KC_DEL), LALT(KC_BSPC),
+    LGUI(KC_Q), LGUI(KC_W), LGUI(KC_E),       LGUI(KC_R),             LGUI(KC_T), LGUI(KC_Y), LGUI(KC_U),    KC_LBRC,      KC_RBRC,      KC_GRV,
+    LGUI(KC_A), LGUI(KC_S), LGUI(KC_D),       LGUI(KC_F),             LGUI(KC_G), LGUI(KC_H), LGUI(KC_J),    KC_SCLN,      KC_QUOT,      LGUI(KC_ENT),
+    xxx,        LGUI(KC_Z), LGUI(KC_X),       LGUI(KC_C),             LGUI(KC_V), LGUI(KC_B), LGUI(KC_N),    LGUI(KC_M),   KC_SLSH,      xxx,
     LCTL(KC_SPC)
   ),
 
   [_uTN] = LAYOUT_big_space_base(
-    TG(BASE), xxx,              xxx,              xxx,              xxx,              xxx,     xxx,            xxx,           xxx,           xxx,
-    xxx,      xxx,              xxx,              xxx,              LCTL(KC_LEFT),    KC_PGUP, LCTL(KC_RIGHT), LGUI(KC_LBRC), LGUI(KC_RBRC), xxx,
-    xxx,      xxx,              xxx,              xxx,              KC_HOME,          KC_PGDN, KC_END,         xxx,           xxx,           LCTL(KC_ENT),
-    xxx,      LGUI(LSFT(KC_C)), LGUI(LSFT(KC_V)), LGUI(LALT(KC_C)), LGUI(LALT(KC_V)), xxx,     xxx,            xxx,           xxx,           xxx,
+    TG(uBASE), xxx,              xxx,              xxx,              xxx,              xxx, xxx, xxx,           xxx,           xxx,
+    xxx,       xxx,              xxx,              xxx,              xxx,              xxx, xxx, LGUI(KC_LBRC), LGUI(KC_RBRC), xxx,
+    xxx,       xxx,              xxx,              xxx,              xxx,              xxx, xxx, xxx,           xxx,           LCTL(KC_ENT),
+    KC_BSLS,   LGUI(LSFT(KC_C)), LGUI(LSFT(KC_V)), LGUI(LALT(KC_C)), LGUI(LALT(KC_V)), xxx, xxx, xxx,           xxx,           xxx,
     xxx
   )
 };
+
 
 
